@@ -1,3 +1,49 @@
 .page-header {
   background-color: $background-intro;
 }
+
+.page-header__box {
+  display: flex;
+  align-items: center;
+  @include container;
+  height: 30px;
+  max-width: 1920px;
+
+  @media  (max-width: $tablet-width){
+  max-width: 960px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    justify-content: space-between;
+    max-width: 435px;
+  }
+
+}
+
+.page-header__menu {
+  display: none;
+
+  @media (max-width: $mobile-width-only) {
+    display: block;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+  }
+}
+
+.page-header__container {
+  background-color: #FEFEFE;
+  height: 40px;
+  padding-left: 20px;
+  @include container;
+  max-width: 1920px;
+
+  @media (max-width: $tablet-width) {
+    max-width: 960px;
+  }
+
+
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}

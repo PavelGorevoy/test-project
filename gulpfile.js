@@ -45,6 +45,14 @@ const html = () => {
     .pipe(gulp.dest("build"));
 }
 
+// normalize
+
+const normalize = () => {
+  return gulp.src("source/normalize/*.css")
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest("build/normalize"));
+}
+
 // Scripts
 
 const scripts = () => {
@@ -151,6 +159,7 @@ const build = gulp.series(
   gulp.parallel(
     styles,
     html,
+    normalize,
     scripts,
     sprite,
     copy,
@@ -167,6 +176,7 @@ exports.default = gulp.series(
   gulp.parallel(
     styles,
     html,
+    normalize,
     scripts,
     sprite,
     copy,

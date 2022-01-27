@@ -1,0 +1,45 @@
+.setting {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.setting__box {
+  display: flex;
+  width: 40px;
+  height: 100%;
+  border-right: 1px solid $gray;
+}
+
+.setting__container {
+  display: flex;
+  padding-right: 20px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.setting__text {
+  font-family: "Proxima Nova", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 21px;
+  color: #51515C;
+  padding-left: 20px;
+}
+
+.setting__svg {
+  width: 14px;
+  height: 17px;
+  margin: auto;
+
+}
+
+.setting__button {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+}
