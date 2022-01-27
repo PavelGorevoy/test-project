@@ -1,0 +1,71 @@
+.table__box {
+  font-family: "Proxima Nova", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  color: #51515C;
+  max-width: 930px;
+  border: none;
+  border-collapse: separate;
+
+  @media  (max-width: $tablet-width){
+    max-width: 960px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    max-width: 435px;
+    margin: 0 auto;
+  }
+
+  input {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.table__box thead th {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 22px;
+  color: $basic-black;
+  text-align: left;
+  border: none;
+  padding: 4px 10px;
+  background: $gray;
+}
+
+.table__box thead tr th:first-child {
+  border-radius: 10px 0 0 0;
+}
+
+.table__box thead tr th:last-child {
+  border-radius: 0 10px 0 0;
+}
+
+.table__box tbody td {
+  text-align: left;
+  border: none;
+  padding: 4px 10px;
+  font-size: 14px;
+  vertical-align: center;
+}
+
+.table__box tbody tr:nth-child(even) {
+  background: $gray;
+}
+
+.table__box tbody tr:last-child td:first-child {
+  border-radius: 0 0 0 10px;
+}
+
+.table__box tbody tr:last-child td:last-child {
+  border-radius: 0 0 10px 0;
+}
+
+.table__item {
+
+  p {
+    margin: 0;
+  }
+}

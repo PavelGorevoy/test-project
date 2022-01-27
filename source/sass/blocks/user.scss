@@ -1,0 +1,42 @@
+.user {
+  margin-left: auto;
+
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+.user__box {
+  display: flex;
+  justify-content: space-between;
+  width: 137px;
+  height: 18px;
+  padding-right: 20px;
+}
+
+.user__notification,
+.logo__chevron-down {
+  width: 18px;
+  height: 18px;
+}
+
+.user__inform {
+  display: flex;
+  justify-content: space-between;
+  width: 67px;
+}
+
+.user__photo {
+  img {
+    border-radius: 100px;
+  }
+}
+
+.user__name {
+  font-family: "Proxima Nova", "Arial", sans-serif;
+  color: $white;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+}

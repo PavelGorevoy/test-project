@@ -1,0 +1,28 @@
+.navigation__list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 120px;
+  width: 420px;
+  height: 30px;
+  margin: 0;
+
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+.navigation__item {
+  list-style: none;
+}
+
+.navigation__link {
+  color: $white;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
