@@ -1,0 +1,53 @@
+.sidebar {
+  background-color: $white;
+}
+.sidebar__desc {
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 12px;
+  color: #938FA0;
+}
+
+.sidebar__box {
+  display: grid;
+  max-width: 300px;
+}
+
+.sidebar__title {
+  border-bottom: 1px solid $gray;
+}
+
+.sidebar__setting {
+  display: grid;
+  max-height: 248px;
+  border-bottom: 1px solid $gray;
+}
+
+.sidebar__checkbox {
+  display: grid;
+}
+
+.sidebar__data {
+  display: grid;
+  border-bottom: 1px solid $gray;
+}
+
+.sidebar__buttons {
+  display: flex;
+}
+
+.sidebar__button {
+  background-color: #F4F4FA;
+  width: 50%;
+  border: 0;
+  cursor: pointer;
+  border-radius: 4px;
+  color: #51515C;
+
+  &--chekd {
+    background-color: #0579F7;
+    color: $white;
+  }
+}

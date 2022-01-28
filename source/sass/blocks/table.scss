@@ -32,7 +32,7 @@
   text-align: left;
   border: none;
   padding: 4px 10px;
-  background: $gray;
+  background: rgba(198, 198, 212, 0.24);;
 }
 
 .table__box thead tr th:first-child {
@@ -52,7 +52,11 @@
 }
 
 .table__box tbody tr:nth-child(even) {
-  background: $gray;
+  background: rgba(198, 198, 212, 0.24);;
+}
+
+.table__box tbody tr:nth-child(odd) {
+  background: $white;
 }
 
 .table__box tbody tr:last-child td:first-child {
