@@ -1,18 +1,64 @@
 .sidebar {
   background-color: $white;
-}
-.sidebar__desc {
-  font-family: Proxima Nova;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 11px;
-  line-height: 12px;
-  color: #938FA0;
+  border-left: 1px solid $gray;
+  margin-left: 13px;
 }
 
 .sidebar__box {
   display: grid;
   max-width: 300px;
+  padding-left: 10px;
+}
+
+.sidebar__title {
+  height: 54px;
+
+  h2{
+    margin: 0;
+    padding-top: 10px;
+  }
+}
+
+.sidebar__headline {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  padding-top: 10px;
+}
+
+.sidebar__label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  padding: 10px 0 10px 0;
+}
+
+.sidebar__input {
+  border: 1px solid #C6C6D4;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+
+  &::placeholder {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: #938FA0;
+    padding-left: 8px;
+  }
+}
+
+.sidebar__desc {
+  display: block;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 12px;
+  color: #938FA0;
+  margin-bottom: 10px;
 }
 
 .sidebar__title {
@@ -21,21 +67,45 @@
 
 .sidebar__setting {
   display: grid;
-  max-height: 248px;
   border-bottom: 1px solid $gray;
 }
 
 .sidebar__checkbox {
   display: grid;
+  padding-top: 14px;
+}
+
+.sidebar__checkbox-holder {
+  display: flex;
+  align-items: center;
+  padding-bottom: 14px;
+
+  input {
+    width: 20px;
+    height: 20px;
+  }
+
+  label {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 12px;
+    padding-left: 5px;
+  }
 }
 
 .sidebar__data {
   display: grid;
   border-bottom: 1px solid $gray;
+
+  select {
+    padding-top: 3px;
+  }
 }
 
 .sidebar__buttons {
   display: flex;
+  padding-top: 10px;
 }
 
 .sidebar__button {
