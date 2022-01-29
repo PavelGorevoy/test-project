@@ -1,0 +1,42 @@
+.hamburger--toggle {
+  display: none;
+
+  @media (max-width: $mobile-width-only) {
+    display: block;
+    background: transparent;
+    border: 1px solid transparent;
+    width: 24px;
+    height: 19px;
+    padding-left: 0px;
+  }
+}
+
+.hamburger--toggle:focus {
+  outline-width: 0;
+}
+
+.hamburger--toggle [class*='hamburger-'] {
+  background: $white;
+  display: block;
+  transform: rotate(0deg);
+  transition: .2s ease all;
+  height: 3px;
+  width: 24px;
+  margin-bottom: 5px;
+}
+
+.hamburger--toggle .hamburger-bot {
+  margin-bottom: 0;
+}
+
+.opened .hamburger-top {
+  transform: rotate(45deg);
+  transform-origin: 5% 20%;
+}
+.opened .hamburger-mid {
+  opacity: 0;
+}
+.opened .hamburger-bot {
+  transform: rotate(-45deg);
+  transform-origin: 5% 95%;
+}

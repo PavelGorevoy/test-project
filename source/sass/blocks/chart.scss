@@ -1,3 +1,38 @@
+.chart {
+  @media (max-width: $mobile-width-only) {
+    order: 1;
+  }
+}
+
+.chart__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 449px;
+  padding-left: 20px;
+}
+
+.chart__title {
+  padding-top: 30px;
+  margin: 0;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 140%;
+  color: #4E8FF4;
+}
+
+.chart__subtitle {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 140%;
+  color: #68D391;
+  padding-top: 6px;
+}
+
 .chart__graph {
   background-color: $gray;
   max-width: 885px;

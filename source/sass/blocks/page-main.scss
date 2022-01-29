@@ -2,3 +2,19 @@
   background-color: #E5E5E5;
   color: #51515C;
 }
+
+.page-main__box {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1920px;
+  padding-top: 30px;
+
+  @media  (max-width: $tablet-width){
+    max-width: 960px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    display: grid;
+    max-width: 435px;
+  }
+}

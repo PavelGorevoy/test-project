@@ -1,3 +1,9 @@
+.table {
+  @media (max-width: $mobile-width-only) {
+    order: 1;
+  }
+}
+
 .table__box {
   font-family: "Proxima Nova", "Arial", sans-serif;
   font-style: normal;

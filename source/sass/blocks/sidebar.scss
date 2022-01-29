@@ -2,12 +2,24 @@
   background-color: $white;
   border-left: 1px solid $gray;
   margin-left: 13px;
+
+  @media (max-width: $mobile-width-only) {
+    margin-left: 0;
+    order: 0;
+  }
+}
+
+.sidebar__close {
+  display: none;
 }
 
 .sidebar__box {
   display: grid;
-  max-width: 300px;
-  padding-left: 10px;
+  width: 300px;
+
+  @media (max-width: $mobile-width-only) {
+    width: 435px;
+  }
 }
 
 .sidebar__title {
@@ -16,6 +28,7 @@
   h2{
     margin: 0;
     padding-top: 10px;
+    padding-left: 10px;
   }
 }
 
@@ -25,6 +38,7 @@
   font-size: 15px;
   line-height: 18px;
   padding-top: 10px;
+  padding-left: 10px;
 }
 
 .sidebar__label {
@@ -32,13 +46,15 @@
   font-weight: normal;
   font-size: 13px;
   line-height: 16px;
-  padding: 10px 0 10px 0;
+  padding: 10px 0 10px 10px;
 }
 
 .sidebar__input {
   border: 1px solid #C6C6D4;
   box-sizing: border-box;
   border-radius: 4px;
+  margin-left: 10px;
+  margin-right: 10px;
 
 
   &::placeholder {
@@ -59,6 +75,7 @@
   line-height: 12px;
   color: #938FA0;
   margin-bottom: 10px;
+  padding-left: 10px;
 }
 
 .sidebar__title {
@@ -79,6 +96,7 @@
   display: flex;
   align-items: center;
   padding-bottom: 14px;
+  padding-left: 10px;
 
   input {
     width: 20px;
@@ -100,12 +118,15 @@
 
   select {
     padding-top: 3px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 
 .sidebar__buttons {
   display: flex;
   padding-top: 10px;
+  padding-left: 10px;
 }
 
 .sidebar__button {
