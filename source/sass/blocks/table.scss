@@ -1,3 +1,9 @@
+.table {
+  @media (max-width: $mobile-width-only) {
+    order: 1;
+  }
+}
+
 .table__box {
   font-family: "Proxima Nova", "Arial", sans-serif;
   font-style: normal;
@@ -21,6 +27,9 @@
   input {
     width: 20px;
     height: 20px;
+    border: 1px solid #C6C6D4;
+    box-sizing: border-box;
+    border-radius: 4px;
   }
 }
 
@@ -32,7 +41,7 @@
   text-align: left;
   border: none;
   padding: 4px 10px;
-  background: $gray;
+  background: rgba(198, 198, 212, 0.24);;
 }
 
 .table__box thead tr th:first-child {
@@ -52,7 +61,11 @@
 }
 
 .table__box tbody tr:nth-child(even) {
-  background: $gray;
+  background: rgba(198, 198, 212, 0.24);;
+}
+
+.table__box tbody tr:nth-child(odd) {
+  background: $white;
 }
 
 .table__box tbody tr:last-child td:first-child {

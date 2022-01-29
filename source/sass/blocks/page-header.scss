@@ -20,17 +20,6 @@
 
 }
 
-.page-header__menu {
-  display: none;
-
-  @media (max-width: $mobile-width-only) {
-    display: block;
-    background-color: transparent;
-    border: 0;
-    cursor: pointer;
-  }
-}
-
 .page-header__container {
   background-color: #FEFEFE;
   height: 40px;
@@ -44,6 +33,12 @@
 
 
   @media (max-width: $mobile-width-only) {
-    display: none;
+
+  }
+}
+
+.page-header__button {
+  @media (max-width: $mobile-width-only) {
+    padding-right: 20px;
   }
 }
